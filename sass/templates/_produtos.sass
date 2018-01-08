@@ -2,8 +2,8 @@ section.container
 	+flexbox
 
 	.tela
-		+make-sm-column(8)
-		+make-sm-column-offset(2)
+		+make-sm-column(12)
+		//+make-sm-column-offset(2)
 		
 	
 		.descricao
@@ -25,13 +25,14 @@ section.container
 				p
 					padding: 2px 
 			.des
+				min-height: 250px
+				background-color: $cinza-claro
 				p
 					color: $preto
 					text-align: left
 					font-size: 16px
 					width: auto
 					height: auto
-					background-color: $cinza-claro
 					margin: 13px 0
 					padding: 10px
 

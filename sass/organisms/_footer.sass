@@ -1,5 +1,7 @@
 footer
+	
 	section.rodape
+		+make-sm-column(12)
 		background-color: $preto
 		width: 100%
 		height: auto
@@ -20,21 +22,31 @@ footer
 
 
 	.faixa-rodape
-
-
-		width: auto
-		height: 70px
+		
+		+make-sm-column(12)
+		height: auto
 		text-align: center
+	
 		 
-		p
-			margin: 23px auto
-			color: $branco
+		.txtredes
+			+make-sm-column(6)
 			text-align: center
-			padding-left: 100px
-			float: center 
+
+			p
+				margin: 23px auto
+				color: $branco
+				text-align: center
+
 
 			+breakpoint($tablet)
 				padding-left: 0
+
+		.redes
+			text-align: center
+			+make-sm-column(3)	
+			margin-top: 8px
+			text-align: center
+			min-height: 50px
 
 		[class^="icone-"]
 						
@@ -44,9 +56,6 @@ footer
 			margin: 0 5px
 			a
 				color: $branco
-
-			+breakpoint($tablet)
-				padding: 0 22px	
 
 		[class^= "fa fa-facebook-square"]
 			+transition(.3s)
@@ -63,16 +72,13 @@ footer
 			&:hover
 				color: #C50000
 	
-	.logo-rodape
-		img
-			width: 60px
-			height: 60px
-			display: block
-			float: left
-			margin: 5px 0
-		+breakpoint($tablet)
+		.logo-rodape
+			+make-sm-column(3)
+			text-align: center
 			float: center
-			width: 80px
-			margin: 0 auto 
-			height: 80px
-			padding-left: 10px
+			img
+				width: 60px
+				height: 60px
+				display: block
+				margin: 5px 0
+		
