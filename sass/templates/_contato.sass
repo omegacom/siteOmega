@@ -15,8 +15,8 @@ section.container
 	form
 
 		+clearfix
-		+make-sm-column(8)
-		+make-sm-column-offset(2)
+		+make-sm-column(12)
+		//+make-sm-column-offset(2)
 		margin-bottom: 20px
 		
 		.botao
@@ -60,29 +60,34 @@ section.container
 			padding: 0 10px
 		.info
 			background-color: $cinza-claro
+		.icones
+			width: auto
+			display: block
+			height: auto
+			text-align: center
+			i
 
-		i
-			font-size: 100px
-			margin: 0 4px
-			color: $cinza-escuro
-		[class^= "fa fa-facebook-square"]
-			+transition(.3s)
-			&:hover
-				color: $azul
+				font-size: 100px
+				margin: 0 4px
+				color: $cinza-escuro
+			[class^= "fa fa-facebook-square"]
+				+transition(.3s)
+				&:hover
+					color: $azul
 
-		[class^= "fa fa-wordpress"]
-			+transition(.3s)
-			&:hover
-				color: $preto
+			[class^= "fa fa-wordpress"]
+				+transition(.3s)
+				&:hover
+					color: $preto
 
-		[class^= "fa fa-youtube-square"]
-			+transition(.3s)
-			&:hover
-				color: #C50000
+			[class^= "fa fa-youtube-square"]
+				+transition(.3s)
+				&:hover
+					color: #C50000
 
-		[class^= "icone-"]
-			display: inline-block
-			float: center
+			[class^= "icone-"]
+				display: inline-block
+				float: center
 
 	.txtaviso
 		+make-sm-column(12)
